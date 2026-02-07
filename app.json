@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "RoadTalk",
+    "slug": "roadtalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "roadtalk",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B101B"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.roadtalk.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "RoadTalk needs microphone access for push-to-talk communication with nearby drivers.",
+        "NSLocationWhenInUseUsageDescription": "RoadTalk needs location access to find drivers near you on the highway."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B101B"
+      },
+      "package": "com.roadtalk.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-location",
+      "expo-asset"
+    ]
+  }
+}
