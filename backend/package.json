@@ -1,0 +1,20 @@
+{
+  "name": "highway-radio-backend",
+  "version": "1.0.0",
+  "description": "Backend Edge Functions for Highway Radio MVP",
+  "type": "module",
+  "scripts": {
+    "deploy:all": "supabase functions deploy get-nearby-drivers && supabase functions deploy create-voice-session",
+    "deploy:nearby": "supabase functions deploy get-nearby-drivers",
+    "deploy:voice": "supabase functions deploy create-voice-session"
+  },
+  "keywords": ["supabase", "edge-functions", "highway-radio"],
+  "author": "Highway Radio Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.142.0"
+  }
+}
